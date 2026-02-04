@@ -4,6 +4,9 @@ import { cloudflare } from "@cloudflare/vite-plugin"
 
 export default defineConfig({
 	base: "/_admin/",
+	build: {
+		outDir: "dist",
+	},
 	plugins: [
 		react(),
 		cloudflare({
